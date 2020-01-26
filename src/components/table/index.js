@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import './style.css'
-import auth from '../data/film.json'
 import { connect } from 'react-redux';
-import { StickyTable, Row, Cell } from 'react-sticky-table';
+import './style.css';
 import '../table/react-sticky-table.css';
+import { StickyTable, Row, Cell } from 'react-sticky-table';
+import auth from '../data/film.json';
 // import CoinTable from './components/coin-table'
 
 class Table extends Component {
@@ -110,7 +110,7 @@ class Table extends Component {
     textArea.focus();
 
     td.insertAdjacentHTML('beforeEnd',
-      '<div class="edit-controls"><button class="edit-ok">OK</button><button class="edit-cancel">CANCEL</button></div>');
+      '<div className="edit-controls"><button class="edit-ok">OK</button><button class="edit-cancel">CANCEL</button></div>');
   };
 
   finishTdEdit = (TD, isOk) => {
@@ -126,22 +126,19 @@ class Table extends Component {
   render() {
     return (
       <section className="full-section">
-      <p class="text-edit">
-        <h1>Таблицы</h1>
-      </p>
-      <div class="rules">
+        <h1 className="text-edit">Таблицы</h1>
+      <div className="rules">
         <ol>
           <li>Для редактирования таблицы, кликните дважды по нужной вам ячейке</li>
           <li>Для выделения в таблице, используйте сочетание клавиш ALT + Левая клавиша мыши</li>
           <li>Число записей в таблице и число выделенных строк, можно посмотреть в строке состояния</li>
-          <li>Сайт адаптивный, потому scroll на таблице появится при уменьшении окна</li>
         </ol>
-      </div>   
+      </div>
         <h2>Содержимое таблицы</h2>
-        
+
         <div role="grid" tabIndex={0} onClick={this.onClickCell} onKeyDown={this.onClickCell} onDoubleClick={this.editCell} style={{ width: '100%', height: '400px' }}>
           <StickyTable>
-            <Row>            
+            <Row>
               <Cell>ID</Cell>
               <Cell>Название Фильма</Cell>
               <Cell>Год</Cell>

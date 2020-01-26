@@ -1,3 +1,7 @@
+.bRuwrX
+{
+  background: none !important;
+}
 .sticky-table-row.row-active {
     background: red;
 }
@@ -14,14 +18,26 @@
     background: yellow !important;
 }
 .sticky-table-column *, .sticky-table-corner *, .sticky-table-header-wrapper * {
-    pointer-events: none; 
+    pointer-events: none;
 }
 .text-edit {
 				text-align: center;
-				margin-top: 20px; 
+				margin-top: 20px;
 }
 .rules {
-				padding-left: 285px;
+		padding-left: 285px;
     padding-top: 15px;
     padding-bottom: 25px;
 }
+.sticky-table-row:nth-child(1){
+  background-color:  yellow !important;
+}
+.iFCzUu .sc-htpNat:nth-child(-n+1) .sc-bwzfXH:nth-child(-n+1):first-child{
+  background-color:  yellow !important;
+}
+.iFCzUu .sc-htpNat:nth-child(-n+1) .sc-bwzfXH{
+  background-color:  yellow !important;
+}
+/* .bRuwrX{
+  background-color: transparent !important;
+} */
