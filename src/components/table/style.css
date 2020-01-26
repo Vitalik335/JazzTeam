@@ -1,0 +1,27 @@
+.sticky-table-row.row-active {
+    background: red;
+}
+.sticky-table-cell {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+.sticky-table-column {
+    background: yellow !important;
+}
+.sticky-table-column > .sticky-table-table {
+    background: yellow !important;
+}
+.sticky-table-column *, .sticky-table-corner *, .sticky-table-header-wrapper * {
+    pointer-events: none; 
+}
+.text-edit {
+				text-align: center;
+				margin-top: 20px; 
+}
+.rules {
+				padding-left: 285px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
